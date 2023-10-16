@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		let teacher = {
+			surname: "Михеева",
+			name: "Татьяна",
+            patronymic: "Александровна",
+			ocupation: "Преподаватель специальных дисциплин",
+			degree: "Высшее",
+            education: "Московский государственный институт электронной техники (технический университет)",
+            qualification: "Инженер-программист инфокоммуникационных систем",
+            specialty: "Программное обеспечение радиоэлектронных систем",
+            discipline: ["Основы алгоритмизации и программирования", "Компьютерная графика"],
+            info: prompt ('Категория:', 'Первая'),
+			info1: prompt ('Стаж:', ''),
+			info2: prompt ('Email:', ''),
+			info3: prompt ('Сайт:', '')
+		};
+        let img = "<img src='no-image.jpg' width='400px' style='margin-right: 15px;'>";
+	</script>
+</head>
+<nav class="navigation">
+	<ul class="navigation-list">
+		<li class="navigation-item"><a href="#" class="navigation-link">О проекте</a></li>
+		<li class="navigation-item"><a href="#" class="navigation-link">Курсы</a></li>
+		<li class="navigation-item"><a href="#" class="navigation-link">Преподаватели</a></li>
+	</ul>
+</nav>
+<body>
+	
+	<header>
+		<h1 style="text-align: center;">MY PROFILE</h1>
+	</header>	
+
+	<main>
+	<div class="img">
+		<script>
+        alert(document.write(img));
+		</script>
+	</div>
+	<div class="info">
+		<script>
+        let line = 
+		    `<h2 style= "font-size: 25px;" > ${teacher.surname} ${teacher.name} ${teacher.patronymic}</h2><br><p><strong>Должность:</strong>${teacher.ocupation} <br><br><strong>Уровень образование:</strong> ${teacher.degree}<br><br><strong>Квалификация:</strong>${teacher.qualification}<br><br><strong>Специальность:</strong>${teacher.specialty}<br><br><strong>Категория:</strong>${teacher.info}<br><br><strong>Стаж:</strong>${teacher.info1}<br><br><strong>E-mail:</strong>${teacher.info2}<br><br><strong>Сайт:</strong>${teacher.info3}<br><br><strong>Дисциплины:</strong><ul><li>${teacher.discipline[0]}</li><li>${teacher.discipline[1]}</li></ul></p>`;
+			alert(document.write(line));
+		</script>
+	</div>
+	</main>
+
+	<footer style="text-align: center;">
+	
+	</footer>
+</body>
+</html>
